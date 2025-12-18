@@ -23,7 +23,7 @@ export default function ComingSoon({ mode, updateData }: ComingSoonProps) {
       <div className="flex gap-2 bg-secondary rounded-full p-1">
         <button
           onClick={() => updateData({ mode: "crypto-to-cash" })}
-          className={`flex-1 px-4 py-2 text-sm font-medium rounded-full transition-all ${
+          className={`flex-1 py-1 px-2 md:px-4 md:py-2 px-3 py-2 text-[10px] md:text-sm font-medium rounded-xl md:rounded-2xl transition-all ${
             mode === "crypto-to-cash"
               ? "bg-primary text-primary-foreground shadow-sm"
               : "text-muted-foreground hover:text-foreground"
@@ -33,7 +33,7 @@ export default function ComingSoon({ mode, updateData }: ComingSoonProps) {
         </button>
         <button
           onClick={() => updateData({ mode: "cash-to-crypto" })}
-          className={`flex-1 px-4 py-2 text-sm font-medium rounded-full transition-all ${
+          className={`flex-1 py-1 px-2 md:px-4 md:py-2 px-3 py-2 text-[10px] md:text-sm font-medium rounded-xl md:rounded-2xl transition-all ${
             mode === "cash-to-crypto"
               ? "bg-primary text-primary-foreground shadow-sm"
               : "text-muted-foreground hover:text-foreground"
@@ -43,7 +43,7 @@ export default function ComingSoon({ mode, updateData }: ComingSoonProps) {
         </button>
         <button
           onClick={() => updateData({ mode: "crypto-to-fiat" })}
-          className={`flex-1 px-4 py-2 text-sm font-medium rounded-full transition-all ${
+          className={`flex-1 py-1 px-2 md:px-4 md:py-2 px-3 py-2 text-[10px] md:text-sm font-medium rounded-xl md:rounded-2xl transition-all ${
             mode === "crypto-to-fiat"
               ? "bg-primary text-primary-foreground shadow-sm"
               : "text-muted-foreground hover:text-foreground"
